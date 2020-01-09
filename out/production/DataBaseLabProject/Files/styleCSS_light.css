@@ -1,0 +1,282 @@
+/*
+ * Copyright (c) 2019. Wojciech Wrona
+ */
+@font-face {
+    src: url(../Files/Fonts/SourceSansPro-Bold.ttf) format("ttf");
+
+}
+
+* {
+    -fx-primary: rgb(255, 255, 255);
+    -fx-secondary: rgb(238, 238, 238);
+    -fx-third: rgb(217, 217, 217);
+    -fx-separated: rgb(247, 247, 247);
+    -fx-pressed: rgb(204, 232, 255);
+    -fx-hovered: rgb(216, 234, 249);
+    -fx-primaryText: rgb(0, 0, 0);
+}
+
+.root {
+    -fx-background-color: -fx-primary;
+    -fx-font-family: "Source Sans Pro";
+    -fx-text-fill: -fx-primaryText;
+    -fx-font-size: 12pt;
+}
+
+.menu-bar {
+    -fx-background-color: -fx-secondary;
+    -fx-font-family: "Source Sans Pro";
+    -fx-text-fill: -fx-primaryText;
+    -fx-font-size: 14pt;
+}
+
+
+.label {
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-primaryText;
+    -fx-font-size: 12px;
+    -fx-font-family: "Source Sans Pro";
+    -fx-label-padding: 0 0 0 10;
+}
+
+
+.button:hover {
+    -fx-background-color: -fx-hovered linear-gradient(to bottom, -fx-hovered 5%, -fx-hovered 100%);
+    -fx-border-width: 0px;
+}
+
+.button:pressed {
+    -fx-background-color: -fx-pressed;
+    -fx-background-size: 100%;
+    -fx-transition: background 0s;
+    -fx-text-fill: -fx-primaryText;
+}
+
+.button {
+    -fx-background-position: center;
+    -fx-background-radius: 0;
+    -fx-transition: background 0.8s;
+    -fx-border: 0px;
+    -fx-padding: 12px 18px;
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-size: 16px;
+    -fx-text-transform: uppercase;
+    -fx-cursor: hand;
+    -fx-outline: none;
+    -fx-text-fill: -fx-primaryText;
+    -fx-background-color: -fx-primary;
+}
+
+
+.menu-button .menu-item{
+    -fx-background-position: center;
+    -fx-transition: background 0.8s;
+    -fx-border: 0px;
+    -fx-padding: 12px 18px;
+    -fx-font-size: 16px;
+    -fx-text-transform: uppercase;
+    -fx-cursor: hand;
+    -fx-outline: none;
+    -fx-text-fill: -fx-primaryText;
+    -fx-background-color: -fx-primary;
+}
+
+.menu-button .menu-item:hover {
+    -fx-background-color: -fx-hovered linear-gradient(to bottom, -fx-hovered 5%, -fx-hovered 100%);
+    -fx-border-width: 0px;
+    -fx-border-color: -fx-third;
+}
+
+.menu-button .menu-item:pressed {
+    -fx-background-color: -fx-pressed;
+    -fx-background-size: 100%;
+    -fx-transition: background 0.8s;
+    -fx-border-color: -fx-third;
+}
+
+.menu-button .menu-item .label {
+    -fx-background-color: transparent;
+    -fx-content-display: top;
+    -fx-alignment: center;
+    -fx-text-fill: -fx-primaryText;
+}
+
+.menu-button {
+    -fx-background-position: center;
+    -fx-background-radius: 0;
+    -fx-transition: background 0.8s;
+    -fx-border: 0px;
+    -fx-padding: 12px 18px;
+    -fx-font-size: 16px;
+    -fx-text-transform: uppercase;
+    -fx-cursor: hand;
+    -fx-outline: none;
+    -fx-text-fill: -fx-primaryText;
+    -fx-background-color: -fx-secondary;
+}
+
+.menu-button:hover {
+    -fx-background-color: -fx-hovered linear-gradient(to bottom, -fx-hovered 5%, -fx-hovered 100%);
+    -fx-border-width: 0px;
+    -fx-border-color: -fx-third;
+}
+
+.menu-button:pressed {
+    -fx-background-color: -fx-pressed;
+    -fx-background-size: 100%;
+    -fx-transition: background 0.8s;
+    -fx-border-color: -fx-third;
+}
+
+.menu-button .label {
+    -fx-background-color: transparent;
+    -fx-content-display: top;
+    -fx-alignment: center;
+    -fx-text-fill: -fx-primaryText;
+}
+
+.jfx-text-field {
+    -fx-padding: 8px;
+    -fx-font-size: 12px;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-text-fill: -fx-primaryText;
+    -fx-border-style: solid;
+    -fx-border-radius: 0px;
+    -jfx-focus-color: -fx-pressed;
+    -jfx-unfocus-color: -fx-hovered;
+    -fx-prompt-text-fill: -fx-secondaryText;
+}
+
+
+.jfx-text-field:hover {
+    -fx-cursor: text;
+}
+
+.jfx-text-field:focused {
+    -fx-outline: none;
+    -jfx-focus-color: -fx-pressed;
+}
+
+
+.tab-label {
+    -fx-text-fill: -fx-primaryText !important;
+}
+
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: -fx-secondary;
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: -fx-secondary !important;
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: -fx-hovered;
+    -fx-stroke-width: 1pt;
+}
+
+.tab-pane .headers-region > .tab > .rippler {
+    -jfx-rippler-fill: -fx-hovered;
+}
+
+.tab-pane .headers-region .tab-selected-line {
+    -fx-background-color: -fx-hovered;
+}
+
+.tab-pane {
+    -fx-background-color: -fx-secondary;
+}
+
+
+.table-view {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primaryText !important;
+}
+
+.table-view:focused {
+    -fx-background-color: -fx-primary;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primaryText !important;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 1px 0px 0px;
+    -fx-border-color: -fx-third;
+    -fx-font-size: 12pt;
+    -fx-padding: 0px 0px 0px 10px;
+}
+
+.table-view .column-header {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: -fx-primaryText;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-primary;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+    -fx-text-fill: -fx-primaryText;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: -fx-hovered;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+    -fx-text-fill: -fx-primaryText;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -fx-pressed;
+    -fx-border-width: 0px;
+    -fx-border-color: -fx-third;
+    -fx-border-style: solid;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+    -fx-text-fill: -fx-primaryText;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+.table-view .filler {
+    -fx-background-color: -fx-secondary;
+}
+
+.slider .track {
+    -fx-background-color: -fx-pressed;
+    -fx-background-insets: 1 0 -1 0, 0, 1;
+    -fx-background-radius: 2.5, 2.5, 1.5;
+    -fx-padding: 2.5px;
+    -fx-text-fill: -fx-primaryText;
+}
+
+.slider > .animated-thumb {
+    -fx-background-color: -fx-hovered;
+}
+
+.slider .slider-value {
+    -fx-fill: -fx-primaryText;
+    -fx-stroke: -fx-primaryText;
+}
+
+.slider > .colored-track {
+    -fx-background-color: -fx-hovered;
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.calendarfx:recurrence:11.6.4" type="repository">
+    <properties maven-id="com.calendarfx:recurrence:11.6.4" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/calendarfx/recurrence/11.6.4/recurrence-11.6.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.10.3/joda-time-2.10.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="EntityClasses.Marki" table="marki">
+        <id name="id" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="nazwa" column="nazwa" />
+        <property name="rok_zalozenia" column="rok_zalozenia" />
+        <property name="siedziba" column="siedziba" />
+        <property name="ilosc_sprzedanych" column="ilosc_sprzedanych" />
+        <property name="id_prezesa" column="id_prezesa" />
+
+    </class>
+
+
+    <class name="EntityClasses.Modele" table="modele">
+        <id name="id_modelu" column="id_modelu">
+            <generator class="increment"/>
+        </id>
+        <property name="nazwa" column="nazwa" />
+        <property name="ilosc_egzemplarzy" column="ilosc_egzemplarzy" />
+        <property name="rok_produkcji" column="rok_produkcji" />
+    </class>
+
+    <class name="EntityClasses.Prezes" table="prezes">
+        <id name="id_prezesa" column="id_prezesa">
+            <generator class="increment"/>
+        </id>
+        <property name="imie" column="imie" />
+        <property name="nazwisko" column="nazwisko" />
+        <property name="pesel" column="pesel" />
+        <property name="wiek" column="wiek" />
+        <property name="pochodzenie" column="pochodzenie" />
+    </class>
+
+    <class name="EntityClasses.Dane_modelu" table="dane_modelu">
+        <id name="id" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="id_modelu" column="id_modelu" />
+        <property name="moc" column="moc" />
+        <property name="pojemnosc" column="pojemnosc" />
+        <property name="typ_nadwozia" column="typ_nadwozia" />
+        <property name="typ_silnika" column="typ_silnika" />
+
+    </class>
+</hibernate-mapping>
